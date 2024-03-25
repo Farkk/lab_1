@@ -1,14 +1,14 @@
 public class FindingCountCharactersToFillConsole implements IConsoleLayoutManager  {
     @Override
     public int calculateCharsToFillLastLine(int consoleWidth, String text) {
-        int textLength = text.length();
-        int remainder = textLength % consoleWidth;
-        int charsToFillLastLine = 0;
+        int _textLength = text.length();
+        int _remainder = _textLength % consoleWidth;
+        int _charsToFillLastLine = 0;
 
-        if (remainder > 0) {
-            charsToFillLastLine = consoleWidth - remainder;
+        if (_remainder > 0) {
+            _charsToFillLastLine = consoleWidth - _remainder;
         }
 
-        return charsToFillLastLine;
+        return _charsToFillLastLine;
     }
 }
