@@ -11,9 +11,18 @@ public class Main {
             choice = selectionOfOperation(choiceStr);
         } while (choice == 0);
 
-        System.out.print("Введите ширину консоли: ");
-        String consoleWidthStr = scanner.nextLine();
-        int consoleWidth = Integer.parseInt(consoleWidthStr);
+        int consoleWidth = 0;
+
+        do {
+            System.out.print("Введите ширину консоли: ");
+            String consoleWidthStr = scanner.nextLine();
+            try {
+                consoleWidth = Integer.parseInt(consoleWidthStr);
+            } catch (NumberFormatException e) {
+                System.out.println("Ошибка, вы ввели не число. Попробуйте снова!");
+            }
+        } while (consoleWidth == 0);
+
 
         System.out.println("Введите текст:");
         String text = scanner.nextLine();
