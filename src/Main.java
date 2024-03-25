@@ -6,7 +6,7 @@ public class Main {
 
         int choice = 0;
         do {
-            System.out.println("Выберите вариант \n1)Работа с символами\n2)Работа со строками\n");
+            System.out.println("Выберите вариант \n1)Работа с символами\n2)Работа со строками");
             String choiceStr = scanner.nextLine();
             choice = selectionOfOperation(choiceStr);
         } while (choice == 0);
@@ -20,7 +20,7 @@ public class Main {
 
         int operation = 0;
         do {
-            System.out.println("Выберите операцию \n1)Определение количества символов\n2)Определение количества строк\n");
+            System.out.println("Выберите операцию \n1)Определение количества символов\n2)Определение количества строк");
             String operationStr = scanner.nextLine();
             operation = selectionOfOperation(operationStr);
         } while (operation == 0);
